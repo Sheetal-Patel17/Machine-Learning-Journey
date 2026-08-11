@@ -1,81 +1,100 @@
-Heart Disease Project — Heart.ipynb
+Insurance Charges Project — Insurance.ipynb
 
-The notebook currently has 53 cells and follows this pipeline:
+Your Insurance notebook has 53 cells, so it is considerably further along.
 
-1. EDA — Completed ✅
-We have:
+A. Dataset + EDA ✅
+We loaded:
 
-Imported NumPy, Pandas, Seaborn, Matplotlib
-Loaded insurance.csv
-Viewed the dataset using head()
-Checked dataset shape
-Checked data types and information
-Generated descriptive statistics
-Checked missing values
-Plotted distributions for:
-Age
-BMI
-Children
-Charges
-Analyzed categorical variables:
-Sex
-Smoker
-Children
-Created boxplots to inspect outliers
-Created a correlation heatmap
+insurance.csv
 
-So your Exploratory Data Analysis is done.
+Then performed:
 
-2. Data Cleaning & Preprocessing — Completed ✅
+head()
+Shape
+info()
+describe()
+Missing-value check
+
+B. EDA Visualizations ✅
+We analyzed:
+
+Age distribution
+BMI distribution
+Children distribution
+Charges distribution
+Sex distribution
+Smoker distribution
+
+You also created:
+
+Boxplots
+Correlation heatmap
+
+C. Data Cleaning ✅
 We:
 
-Created a cleaned copy of the dataset
-Removed duplicate rows
+Created a cleaned dataset
+Removed duplicates
 Checked missing values
 Checked data types
-Converted:
-male/female → 0/1
-no/yes smoker → 0/1
-Renamed:
+
+D. Encoding ✅
+We converted:
+
+male → 0
+female → 1
+
+no smoker → 0
+yes smoker → 1
+
+Then renamed them:
+
 sex → is_female
 smoker → is_smoker
-Applied one-hot encoding to region
-Converted the resulting data to integer format
 
-3. Feature Engineering — Completed ✅
-We created a new BMI category feature:
+You also encoded region.
+
+E. Feature Engineering ✅
+We created:
+
+BMI Category
 
 Underweight
 Normal
 Overweight
 Obese
 
-Then you converted those categories into dummy variables.
+Then one-hot encoded the BMI categories.
 
-You also applied StandardScaler to:
+F. Feature Scaling ✅
+We applied StandardScaler to:
 
-age
-bmi
-children
+Age
+BMI
+Children
 
-This is a good step because you're preparing numerical features for a linear regression model.
-
-4. Feature Selection / Statistical Analysis — Completed ✅
-This is actually a strong part of your notebook.
-
+G. Statistical Feature Analysis ✅
+This is an important part of your Insurance project.
 We performed:
 
 Pearson Correlation
 
-Checked relationships between numerical/features and charges.
+to analyze numerical feature relationships.
+
+You also performed:
 
 Chi-Square Test
 
-Tested categorical features against binned insurance charges.
-Used significance level α = 0.05.
-Used the results to decide which features should be retained/dropped.
+on categorical features against binned insurance charges.
 
-Then you selected your final features:
+You used:
+
+α = 0.05
+
+and used the results for feature selection.
+
+H. Final Feature Selection ✅
+We final dataset uses:
 
 age
 is_female
@@ -86,46 +105,27 @@ region_southeast
 bmi_category_Obese
 region_northwest
 
-with:
+Target:
 
 charges
 
-as the target.
+I. Train/Test Split ✅
+We used:
 
-5. Train-Test Split — Completed ✅
-We have:
+80% Training
+20% Testing
+random_state = 42
 
-80% training data
-20% testing data
-random_state=42
-
-So the dataset is properly divided into training and testing sets.
-
-6. Machine Learning Model — Completed ✅
+J. Machine Learning ✅
 We trained:
 
 Linear Regression
+and generated:
 
-model = LinearRegression()
-model.fit(X_train, y_train)
+y_pred
 
-Then generated predictions:
+K. Model Evaluation — Partially Done ⚠️
+We calculated:
 
-y_pred = model.predict(X_test)
-
-7. Model Evaluation — Partially Completed ⚠️
-We have already calculated:
-
-R² Score
-Adjusted R²
-
-This is good, but your ML evaluation is not complete yet.
-You should still add:
-
-MAE
-MSE
-RMSE
-Actual vs Predicted plot
-Residual/error analysis
-Predicted vs Actual visualization
-Comparison with other regression models
+R² Score ✅
+Adjusted R² ✅
