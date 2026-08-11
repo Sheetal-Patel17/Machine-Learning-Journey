@@ -1,4 +1,4 @@
->>Heart Disease Project — Heart.ipynb<<
+Heart Disease Project — Heart.ipynb
 
 The notebook currently has 53 cells and follows this pipeline:
 
