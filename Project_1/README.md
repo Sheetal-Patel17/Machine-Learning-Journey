@@ -1,3 +1,5 @@
+>>Heart Disease Project — Heart.ipynb<<
+
 The notebook currently has 53 cells and follows this pipeline:
 
 1. EDA — Completed ✅
@@ -118,7 +120,6 @@ R² Score
 Adjusted R²
 
 This is good, but your ML evaluation is not complete yet.
-
 You should still add:
 
 MAE
