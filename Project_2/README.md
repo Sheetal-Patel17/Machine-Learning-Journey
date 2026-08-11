@@ -1,0 +1,77 @@
+Heart Disease Project — Heart.ipynb
+
+Your Heart notebook has 32 cells and currently covers EDA + data cleaning/preprocessing.
+
+A. Dataset Loading ✅
+We have:
+
+Imported NumPy, Pandas, Seaborn, Matplotlib
+Loaded heart.csv
+Displayed the first rows
+Checked column names
+Checked dataset shape
+Checked data types using info()
+Generated statistical summary using describe()
+
+B. Data Quality Checking ✅
+We checked:
+
+Duplicate records
+Missing values
+Distribution of HeartDisease
+Zero values in important numerical columns
+
+You identified that:
+
+Cholesterol contains 0
+RestingBP contains 0
+
+C. Data Cleaning ✅
+We handled those zero values by replacing them with the mean of the non-zero values.
+
+For example:
+
+Cholesterol 0 → mean Cholesterol
+RestingBP 0 → mean RestingBP
+
+You also rounded the resulting values to 2 decimal places.
+
+D. Exploratory Data Analysis ✅
+We created visualizations for:
+
+Numerical features
+
+Age
+RestingBP
+Cholesterol
+MaxHR
+
+Categorical/target relationships
+
+Sex vs HeartDisease
+ChestPainType vs HeartDisease
+FastingBS vs HeartDisease
+
+Other visualizations
+
+Cholesterol boxplot by HeartDisease
+Age violin plot by HeartDisease
+Correlation heatmap
+
+You also used sheryanalysis for additional dataset analysis.
+
+E. Encoding ✅
+We performed one-hot encoding:
+
+pd.get_dummies(df, drop_first=True)
+
+Then converted the resulting columns to integers.
+
+F. Feature Scaling ✅
+We used StandardScaler on:
+
+Age
+RestingBP
+Cholesterol
+MaxHR
+Oldpeak
