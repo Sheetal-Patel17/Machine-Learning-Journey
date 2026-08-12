@@ -72,9 +72,6 @@ Machine-Learning-Journey/
 ```
 
 ---
-
-# 📚 Course Progress
-
 ## 🟢 Part 1 — Machine Learning Foundation
 
 - [ ] What is Artificial Intelligence (AI)?
