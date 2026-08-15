@@ -268,6 +268,4 @@ Model Deployment
 
 *"The best way to learn Machine Learning is to build projects, make mistakes, analyze results, and continuously improve."*
 
-**Happy Learning & Happy Coding! 💙**
-
 </div>
